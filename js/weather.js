@@ -1,6 +1,6 @@
-var getWeather;
 
-if ("geolocation" in navigator){
+
+function getWeather(){if ("geolocation" in navigator){
     navigator.geolocation.getCurrentPosition(function(position){
         loadWeather(position.coords.latitude + ',' + position.coords.longitude);
     });
@@ -8,6 +8,7 @@ if ("geolocation" in navigator){
 else {
     loadWeather("Kolkata, IN","" );
 }
+};
 
 $(document).ready(function(){
     setInterval(getWeather, 10000);
