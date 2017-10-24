@@ -9,7 +9,8 @@ function getWeather(){
 };
 
 function main() {
-	setInterval(getWeather, 10000);
+        getWeather();
+	setInterval(getWeather, 1000000);
 };
 
 function loadWeather(location,woeid){
