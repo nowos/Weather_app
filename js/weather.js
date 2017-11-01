@@ -9,7 +9,7 @@ function getWeather() {
 }
 
 function onError(error) {
-  alert(error.message +  ". There will be set default New York location.");
+  alert(error.message +  ". Will be set default New York location.");
   loadWeather(defaultPosition);
 }
 
