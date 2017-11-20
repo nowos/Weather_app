@@ -1,4 +1,4 @@
-var defaultPosition = "New York";
+var defaultPosition = "Brighton";
 
 function getWeather() {
   if ("geolocation" in navigator) {
